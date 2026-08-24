@@ -14,8 +14,12 @@
   alt="Favour Okpara — Fullstack Developer and Technical Writer"
 />
 
+<!--
+  One link, not two: the CV lives on the portfolio and is only ever updated there.
+  Nothing here to keep in sync.
+-->
 <a href="https://okpara.netlify.app">
-  <img src="https://img.shields.io/badge/Portfolio-AB7249?style=for-the-badge&logo=googlechrome&logoColor=F5EFE8" alt="Portfolio" />
+  <img src="https://img.shields.io/badge/Portfolio%20%26%20CV-AB7249?style=for-the-badge&logo=googlechrome&logoColor=F5EFE8" alt="Portfolio and CV" />
 </a>
 <a href="mailto:okparafavour202@gmail.com">
   <img src="https://img.shields.io/badge/Email-885A3A?style=for-the-badge&logo=gmail&logoColor=F5EFE8" alt="Email" />
@@ -44,7 +48,8 @@ I studied the human body for four years, then pointed the same question at softw
 
 - **Right now** — Frontend Engineer at **Netsprin** (full-time), freelance frontend at **Simbi**, based in Enugu, Nigeria.
 - **Before that** — wrote and taught a 12-week React Native + Expo curriculum at Loctech, and took 50+ students through a full-stack curriculum at LanceySoft.
-- **Open to** — frontend and fullstack roles, select freelance builds, and paid technical writing.
+- **Open to** — frontend and fullstack roles (remote, or hybrid in Enugu), select freelance builds, and paid technical writing.
+- **Hours** — WAT, UTC+1. A full working day's overlap with Europe; my afternoons are the US East Coast's mornings.
 - **Rule I keep** — nothing on my CV I can't defend in a code review.
 
 ---
@@ -79,13 +84,13 @@ I studied the human body for four years, then pointed the same question at softw
 
 ### Selected work
 
-| Project | What it is | Stack |
-| :--- | :--- | :--- |
-| **[Tutera](https://tuteraafrica.xyz/)** | LMS so educators across Africa can teach, own their material and get paid | Next.js · Zustand · Express |
-| **[BB Tutors](https://www.bbtutors.org/)** | Tutor storefront — browse a lesson, buy it, watch it | Next.js · Express · Beepay |
-| **[VibeCraft](https://vibecraft.today)** | A website builder you talk to *(frontend only — the LLM work was someone else's)* | Next.js · TypeScript |
-| **[Adaptly](https://adaptly.onrender.com/)** | Read a document in a language you don't speak, using Chrome's built-in AI | React · Chrome AI |
-| **[Griggs Hospital](https://griggsspecialisthospital.com.ng/)** | Public hospital site that works for people who are worried and in a hurry | React · Express |
+| Project | What it is | Stack | Code |
+| :--- | :--- | :--- | :--- |
+| **[Tutera](https://tuteraafrica.xyz/)** | LMS so educators across Africa can teach, own their material and get paid | Next.js · Zustand · Express | client, private |
+| **[BB Tutors](https://www.bbtutors.org/)** | Tutor storefront — browse a lesson, buy it, watch it | Next.js · Express · Beepay | client, private |
+| **[VibeCraft](https://vibecraft.today)** | A website builder you talk to *(frontend only — the LLM work was someone else's)* | Next.js · TypeScript | [repo](https://github.com/Okpara202/VibeCraft) |
+| **[Adaptly](https://adaptly.onrender.com/)** | Read a document in a language you don't speak, using Chrome's built-in AI | React · Chrome AI | [repo](https://github.com/Mmeso1/Adaptly) |
+| **[Griggs Hospital](https://griggsspecialisthospital.com.ng/)** | Public hospital site that works for people who are worried and in a hurry | React · Express | client, private |
 
 ---
 
@@ -93,8 +98,10 @@ I studied the human body for four years, then pointed the same question at softw
 
 Neither is finished. That's rather the point of listing them.
 
-- **Ahia** — a marketplace with the hard parts left in: real-time chat, escrow, and a notification pipeline that doesn't drop things. `Express` `Postgres` `Redis` `BullMQ`
-- **MyCompound** — rent tracking for landlords who currently do it in a notebook. Modelled properly before a line of code. `MongoDB` `Next.js`
+- **Ahia** — a marketplace with the hard parts left in: real-time chat, escrow, and a notification pipeline that doesn't drop things. `Express` `Postgres` `Redis` `BullMQ`<br />
+  → [backend](https://github.com/Okpara202/Ahia-backend) · [storefront](https://github.com/Okpara202/Ahia) · [admin](https://github.com/Okpara202/ahia-admn)
+- **MyCompound** — rent tracking for landlords who currently do it in a notebook. Modelled properly before a line of code. `MongoDB` `Next.js`<br />
+  → still on paper; the repo goes public with the first working slice
 
 ---
 
@@ -105,38 +112,64 @@ Neither is finished. That's rather the point of listing them.
   The github-readme-stats public instance is chronically rate-limited and was
   returning a hard 503 when this was written — it is the reason you see broken
   "Stats" images on so many profiles. Self-host that one if you ever want it.
+
+  Each card is declared twice, and GitHub picks by the reader's colour scheme.
+  Without the <picture> wrapper, anyone browsing in light mode gets dark slabs.
 -->
 
-<img
-  src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Okpara202&theme=github_dark"
-  width="88%"
-  alt="Profile summary"
-/>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Okpara202&theme=github_dark" />
+  <img
+    src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Okpara202&theme=default"
+    width="88%"
+    alt="Profile summary"
+  />
+</picture>
 
-<img
-  src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Okpara202&theme=github_dark"
-  height="200"
-  alt="Commit stats"
-/>
-<img
-  src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Okpara202&theme=github_dark"
-  height="200"
-  alt="Most used languages"
-/>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Okpara202&theme=github_dark" />
+  <img
+    src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Okpara202&theme=default"
+    height="200"
+    alt="Commit stats"
+  />
+</picture>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Okpara202&theme=github_dark" />
+  <img
+    src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Okpara202&theme=default"
+    height="200"
+    alt="Most used languages"
+  />
+</picture>
 
-<img
-  src="https://github-readme-activity-graph.vercel.app/graph?username=Okpara202&bg_color=05080F&color=C1AA8B&line=AB7249&point=F5EFE8&area=true&hide_border=true"
-  width="88%"
-  alt="Contribution activity"
-/>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=Okpara202&bg_color=05080F&color=C1AA8B&line=AB7249&point=F5EFE8&area=true&hide_border=true" />
+  <img
+    src="https://github-readme-activity-graph.vercel.app/graph?username=Okpara202&bg_color=F5EFE8&color=885A3A&line=AB7249&point=05080F&area=true&hide_border=true"
+    width="88%"
+    alt="Contribution activity"
+  />
+</picture>
 
 </div>
 
 ---
 
-<div align="center">
+### I also write
 
-**I also write.** Mostly React, Next.js, React Native and the specific things that go wrong between a frontend and the API it's talking to — for the developer who is stuck on it right now, not for the algorithm.
+Mostly React, Next.js, React Native and the specific things that go wrong between a frontend and the API it's talking to — for the developer who is stuck on it right now, not for the algorithm.
+
+- [**Understanding React's Rendering Behavior**](https://medium.com/@okparafavour202/understanding-reacts-rendering-behavior-what-actually-triggers-a-re-render-01ee19399d4f) — the four things that genuinely trigger a re-render, and the ones everyone blames that don't.
+- [**Tree Shaking Isn't Magic**](https://medium.com/@okparafavour202/tree-shaking-isnt-magic-common-mistakes-that-keep-your-bundle-bloated-86a706669cd9) — six import and export habits that quietly keep dead code in the bundle you thought you'd trimmed.
+- [**The Variable Trinity**](https://medium.com/@okparafavour202/the-variable-trinity-understanding-var-const-and-let-for-better-coding-041ad9293b1f) — `var`, `let` and `const`, and picking the one that fails loudest when you're wrong.
+- [**HTML Semantics**](https://medium.com/@okparafavour202/html-semantics-elevate-your-web-development-with-meaningful-markup-235c82f4dfea) — markup that tells a screen reader, and a crawler, what it is actually looking at.
+
+[Everything else on Medium →](https://medium.com/@okparafavour202)
+
+---
+
+<div align="center">
 
 If you have a product engineers need to understand and nobody on the team has time to write it up, that's the job I want.
 
