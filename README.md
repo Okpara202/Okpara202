@@ -113,44 +113,35 @@ Neither is finished. That's rather the point of listing them.
   returning a hard 503 when this was written — it is the reason you see broken
   "Stats" images on so many profiles. Self-host that one if you ever want it.
 
-  Each card is declared twice, and GitHub picks by the reader's colour scheme.
-  Without the <picture> wrapper, anyone browsing in light mode gets dark slabs.
+  Deliberately dark in both colour schemes. A <picture> + prefers-color-scheme
+  swap was tried and reverted: that media query reads the OS/browser theme, not
+  the theme chosen in GitHub's own settings, so a dark-mode GitHub reader on a
+  light OS got white cards on a dark page. Dark on light reads as a design
+  choice; white on dark just reads as broken.
 -->
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Okpara202&theme=github_dark" />
-  <img
-    src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Okpara202&theme=default"
-    width="88%"
-    alt="Profile summary"
-  />
-</picture>
+<img
+  src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Okpara202&theme=github_dark"
+  width="88%"
+  alt="Profile summary"
+/>
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Okpara202&theme=github_dark" />
-  <img
-    src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Okpara202&theme=default"
-    height="200"
-    alt="Commit stats"
-  />
-</picture>
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Okpara202&theme=github_dark" />
-  <img
-    src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Okpara202&theme=default"
-    height="200"
-    alt="Most used languages"
-  />
-</picture>
+<img
+  src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Okpara202&theme=github_dark"
+  height="200"
+  alt="Commit stats"
+/>
+<img
+  src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Okpara202&theme=github_dark"
+  height="200"
+  alt="Most used languages"
+/>
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=Okpara202&bg_color=05080F&color=C1AA8B&line=AB7249&point=F5EFE8&area=true&hide_border=true" />
-  <img
-    src="https://github-readme-activity-graph.vercel.app/graph?username=Okpara202&bg_color=F5EFE8&color=885A3A&line=AB7249&point=05080F&area=true&hide_border=true"
-    width="88%"
-    alt="Contribution activity"
-  />
-</picture>
+<img
+  src="https://github-readme-activity-graph.vercel.app/graph?username=Okpara202&bg_color=05080F&color=C1AA8B&line=AB7249&point=F5EFE8&area=true&hide_border=true"
+  width="88%"
+  alt="Contribution activity"
+/>
 
 </div>
 
