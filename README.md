@@ -65,17 +65,19 @@ I studied the human body for four years, then pointed the same question at softw
 
 <!--
   Cards sit loose in a centred div rather than a table: a table would lock the
-  column count, this wraps to one-up on a narrow viewport by itself. Percentage
-  widths, not fixed pixels — a fixed 420 overflowed the column at higher zoom
-  and dropped every card onto its own row.
+  column count, this reflows to two-up and then one-up as the viewport narrows.
+  Percentage widths, not fixed pixels — a fixed 420 overflowed the column at
+  higher zoom and dropped every card onto its own row.
+  Three across at 31%: the cards were redrawn compact (one description line,
+  stack as text instead of pills) so the type stays legible at that size.
 -->
 <div align="center">
 
-<a href="https://tuteraafrica.xyz/"><img src="assets/card-tutera.svg" width="47%" alt="Tutera — an LMS so educators across Africa can teach, own their material and get paid. Next.js, Zustand, Express." /></a>
-<a href="https://www.bbtutors.org/"><img src="assets/card-bbtutors.svg" width="47%" alt="BB Tutors — a tutor's storefront: browse a lesson, buy it, watch it. Next.js, Express, Beepay." /></a>
-<a href="https://vibecraft.today"><img src="assets/card-vibecraft.svg" width="47%" alt="VibeCraft — a website builder you talk to. Frontend only. Next.js, TypeScript." /></a>
-<a href="https://adaptly.onrender.com/"><img src="assets/card-adaptly.svg" width="47%" alt="Adaptly — read a document in a language you don't speak, using Chrome's built-in AI. React." /></a>
-<a href="https://griggsspecialisthospital.com.ng/"><img src="assets/card-griggs.svg" width="47%" alt="Griggs Specialist Hospital — a hospital site for people who are worried and in a hurry. React, Express." /></a>
+<a href="https://tuteraafrica.xyz/"><img src="assets/card-tutera.svg" width="31%" alt="Tutera — an LMS so educators across Africa can teach, own their material and get paid. Next.js, Zustand, Express." /></a>
+<a href="https://www.bbtutors.org/"><img src="assets/card-bbtutors.svg" width="31%" alt="BB Tutors — a tutor's storefront: browse a lesson, buy it, watch it. Next.js, Express, Beepay." /></a>
+<a href="https://vibecraft.today"><img src="assets/card-vibecraft.svg" width="31%" alt="VibeCraft — a website builder you talk to. Frontend only. Next.js, TypeScript." /></a>
+<a href="https://adaptly.onrender.com/"><img src="assets/card-adaptly.svg" width="31%" alt="Adaptly — read a document in a language you don't speak, using Chrome's built-in AI. React." /></a>
+<a href="https://griggsspecialisthospital.com.ng/"><img src="assets/card-griggs.svg" width="31%" alt="Griggs Specialist Hospital — a hospital site for people who are worried and in a hurry. React, Express." /></a>
 
 </div>
 

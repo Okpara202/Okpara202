@@ -1,33 +1,23 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 170" width="420" height="170" role="img" aria-label="BB Tutors — a tutor's storefront: browse a lesson, buy it, watch it. Next.js, Express, Beepay. Live site.">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 112" width="320" height="112" role="img" aria-label="BB Tutors — browse a lesson, buy it, watch it. Next.js, Express, Beepay. Live site.">
   <style>
     .ttl { fill: #1A2233 }
     .dsc { fill: #5A6577 }
     .acc { fill: #8B5B33 }
     .brd { stroke: #8B5B33; stroke-opacity: .38 }
-    .chp { stroke: #8B5B33; stroke-opacity: .30 }
     @media (prefers-color-scheme: dark) {
       .ttl { fill: #F0F4F9 }
       .dsc { fill: #98A3B4 }
       .acc { fill: #C99B6E }
       .brd { stroke: #C1AA8B; stroke-opacity: .34 }
-      .chp { stroke: #C1AA8B; stroke-opacity: .26 }
     }
   </style>
 
-  <rect class="brd" x="0.75" y="0.75" width="418.5" height="168.5" rx="14" fill="none" stroke="#8B5B33" stroke-opacity="0.38" stroke-width="1.5" />
+  <rect class="brd" x="0.75" y="0.75" width="318.5" height="110.5" rx="12" fill="none" stroke="#8B5B33" stroke-opacity="0.38" stroke-width="1.5" />
 
-  <text class="ttl" x="28" y="48" font-family="Amaranth, 'Trebuchet MS', 'Segoe UI', Verdana, sans-serif" font-size="21" font-weight="700" fill="#1A2233">BB Tutors</text>
-  <text class="acc" x="392" y="45" text-anchor="end" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Consolas, monospace" font-size="10.5" letter-spacing="1" fill="#8B5B33">LIVE ↗</text>
+  <text class="ttl" x="20" y="36" font-family="Amaranth, 'Trebuchet MS', 'Segoe UI', Verdana, sans-serif" font-size="19" font-weight="700" fill="#1A2233">BB Tutors</text>
+  <text class="acc" x="300" y="34" text-anchor="end" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Consolas, monospace" font-size="9.5" letter-spacing="0.8" fill="#8B5B33">LIVE ↗</text>
 
-  <text class="dsc" x="28" y="82" font-family="Lora, Georgia, 'Times New Roman', serif" font-size="13.5" fill="#5A6577">A tutor's storefront — browse a lesson, buy</text>
-  <text class="dsc" x="28" y="102" font-family="Lora, Georgia, 'Times New Roman', serif" font-size="13.5" fill="#5A6577">it, watch it, all in one pass.</text>
+  <text class="dsc" x="20" y="63" font-family="Lora, Georgia, 'Times New Roman', serif" font-size="12.5" fill="#5A6577">Browse a lesson, buy it, watch it.</text>
 
-  <g font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Consolas, monospace" font-size="11" text-anchor="middle">
-    <rect class="chp" x="28" y="126" width="74" height="26" rx="13" fill="none" stroke="#8B5B33" stroke-opacity="0.30" />
-    <text class="acc" x="65" y="143" fill="#8B5B33">Next.js</text>
-    <rect class="chp" x="110" y="126" width="74" height="26" rx="13" fill="none" stroke="#8B5B33" stroke-opacity="0.30" />
-    <text class="acc" x="147" y="143" fill="#8B5B33">Express</text>
-    <rect class="chp" x="192" y="126" width="68" height="26" rx="13" fill="none" stroke="#8B5B33" stroke-opacity="0.30" />
-    <text class="acc" x="226" y="143" fill="#8B5B33">Beepay</text>
-  </g>
+  <text class="acc" x="20" y="90" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Consolas, monospace" font-size="10.5" fill="#8B5B33">Next.js · Express · Beepay</text>
 </svg>
