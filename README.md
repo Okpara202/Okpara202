@@ -53,10 +53,10 @@
 -->
 ### <img src="assets/section-about.svg" height="26" alt="Anatomy, then this" />
 
-I studied the human body for four years, then pointed the same question at software: *what is this part for, and what breaks if it stops?*
+My degree is in Human Anatomy — four years of learning a system by taking it apart to see what each piece does. I build software the same way.
 
 - Frontend Engineer at **Netsprin**, freelance frontend at **Simbi**. Enugu, Nigeria — WAT, UTC+1.
-- I taught it before I claimed it: a 12-week React Native curriculum at Loctech, 50+ students through fullstack at LanceySoft.
+- Wrote and taught a 12-week React Native curriculum at Loctech, and took 50+ students through fullstack at LanceySoft.
 - Open to frontend and fullstack roles, select freelance builds, and paid technical writing.
 
 ---
@@ -81,7 +81,7 @@ I studied the human body for four years, then pointed the same question at softw
 
 </div>
 
-Live links where there are live links. The client builds live in their organisations' repos; [VibeCraft](https://github.com/Okpara202/VibeCraft) and [Adaptly](https://github.com/Mmeso1/Adaptly) are mine to hand you.
+Every card links to the live site. The client builds sit in their organisations' repos; [VibeCraft](https://github.com/Okpara202/VibeCraft) and [Adaptly](https://github.com/Mmeso1/Adaptly) are public.
 
 ---
 
