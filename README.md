@@ -3,16 +3,19 @@
   Lives in the repo github.com/Okpara202/Okpara202 — the name must match the
   username exactly, or GitHub will not surface it on the profile.
 
-  Palette matches okpara.netlify.app:
-    brown  #AB7249   dark brown #885A3A   tan #C1AA8B   slate #05080F
+  Palette lifted from okpara.netlify.app's dark theme, exact values:
+    bg #05080F   card #0B111F   border #17202F   text #F0F4F9
+    muted #8494AB   brown #AB7249   brown-light #C08A5E   tan #C1AA8B
+
+  The hero, the section headers and the project cards are hand-built SVG in
+  assets/ rather than badge-service images. GitHub strips CSS from READMEs, so
+  an SVG we own is the only place the site's card/border/glow system can live.
+  Editing one means editing its SVG — that is the cost of it not looking generic.
 -->
 
 <div align="center">
 
-<img
-  src="https://capsule-render.vercel.app/api?type=rect&color=885A3A&height=180&section=header&text=Favour%20Okpara&fontSize=64&fontColor=F5EFE8&fontAlignY=42&desc=Fullstack%20Developer%20%7C%20Technical%20Writer&descSize=20&descAlignY=68"
-  alt="Favour Okpara — Fullstack Developer and Technical Writer"
-/>
+<img src="assets/hero.svg" width="100%" alt="Favour Okpara — fullstack developer and technical writer. At Netsprin, open to the right move." />
 
 <!--
   One link, not two: the CV lives on the portfolio and is only ever updated there.
@@ -42,7 +45,12 @@
 
 ---
 
-### About me
+<!--
+  Section headings stay real <h3> elements with the SVG inline, so the document
+  outline and the alt text survive. An <img> on its own line would have thrown
+  both away.
+-->
+### <img src="assets/section-about.svg" height="26" alt="About me" />
 
 I studied the human body for four years, then pointed the same question at software and never really stopped: *what is this part for, and what breaks if it stops?*
 
@@ -54,7 +62,7 @@ I studied the human body for four years, then pointed the same question at softw
 
 ---
 
-### What I reach for
+### <img src="assets/section-toolkit.svg" height="26" alt="What I reach for" />
 
 **Frontend**
 
@@ -82,19 +90,29 @@ I studied the human body for four years, then pointed the same question at softw
 
 ---
 
-### Selected work
+### <img src="assets/section-work.svg" height="26" alt="Selected work" />
 
-| Project | What it is | Stack | Code |
-| :--- | :--- | :--- | :--- |
-| **[Tutera](https://tuteraafrica.xyz/)** | LMS so educators across Africa can teach, own their material and get paid | Next.js · Zustand · Express | client, private |
-| **[BB Tutors](https://www.bbtutors.org/)** | Tutor storefront — browse a lesson, buy it, watch it | Next.js · Express · Beepay | client, private |
-| **[VibeCraft](https://vibecraft.today)** | A website builder you talk to *(frontend only — the LLM work was someone else's)* | Next.js · TypeScript | [repo](https://github.com/Okpara202/VibeCraft) |
-| **[Adaptly](https://adaptly.onrender.com/)** | Read a document in a language you don't speak, using Chrome's built-in AI | React · Chrome AI | [repo](https://github.com/Mmeso1/Adaptly) |
-| **[Griggs Hospital](https://griggsspecialisthospital.com.ng/)** | Public hospital site that works for people who are worried and in a hurry | React · Express | client, private |
+<!--
+  Cards sit loose inside a centred div rather than in a table: a table would
+  lock the column count, this wraps to one-up on a narrow viewport on its own.
+  Each card links to the live site. Repo links live in the line underneath —
+  an <img> can only carry one href.
+-->
+<div align="center">
+
+<a href="https://tuteraafrica.xyz/"><img src="assets/card-tutera.svg" width="420" alt="Tutera — an LMS so educators across Africa can teach, own their material and get paid. Next.js, Zustand, Express." /></a>
+<a href="https://www.bbtutors.org/"><img src="assets/card-bbtutors.svg" width="420" alt="BB Tutors — a tutor's storefront: browse a lesson, buy it, watch it. Next.js, Express, Beepay." /></a>
+<a href="https://vibecraft.today"><img src="assets/card-vibecraft.svg" width="420" alt="VibeCraft — a website builder you talk to. Frontend only. Next.js, TypeScript." /></a>
+<a href="https://adaptly.onrender.com/"><img src="assets/card-adaptly.svg" width="420" alt="Adaptly — read a document in a language you don't speak, using Chrome's built-in AI. React." /></a>
+<a href="https://griggsspecialisthospital.com.ng/"><img src="assets/card-griggs.svg" width="420" alt="Griggs Specialist Hospital — a hospital site for people who are worried and in a hurry. React, Express." /></a>
+
+</div>
+
+**Code** — [VibeCraft](https://github.com/Okpara202/VibeCraft) and [Adaptly](https://github.com/Mmeso1/Adaptly) are public. Tutera, BB Tutors and Griggs are client work and stay private; happy to walk through any of them.
 
 ---
 
-### On my desk this month
+### <img src="assets/section-desk.svg" height="26" alt="On my desk this month" />
 
 Neither is finished. That's rather the point of listing them.
 
@@ -147,7 +165,7 @@ Neither is finished. That's rather the point of listing them.
 
 ---
 
-### I also write
+### <img src="assets/section-writing.svg" height="26" alt="I also write" />
 
 Mostly React, Next.js, React Native and the specific things that go wrong between a frontend and the API it's talking to — for the developer who is stuck on it right now, not for the algorithm.
 
