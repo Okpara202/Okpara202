@@ -1,48 +1,47 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 280" width="1000" height="280" role="img" aria-label="Favour Okpara — fullstack developer and technical writer">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 280" width="1000" height="280" role="img" aria-label="Favour Okpara — fullstack developer and technical writer. Enugu, Nigeria, open to the right move.">
   <!--
-    Hand-built to okpara.netlify.app's dark tokens, not a badge service:
-      bg #05080F (222 47% 4%)   border #17202F   text #F0F4F9
-      brown #AB7249 (25 40% 48%)   brown-light #C08A5E   tan #C1AA8B
-    Fonts fall back on purpose. GitHub proxies this file through camo, which
-    blocks the Google Fonts request, so Amaranth/Lora/JetBrains Mono are named
-    first and a system stack carries the render.
+    A self-contained brand band, not a page-coloured slab. It carries its own
+    brown gradient and its own light text, so it reads the same whether GitHub
+    is in light or dark mode — a hero band on white looks deliberate, a
+    near-black card on white looks like a hole.
+    Brown is taken from okpara.netlify.app: #AB7249 with #5E3A20 and the site's
+    slate #0B1020 anchoring the dark end, where the small text sits.
   -->
   <defs>
     <clipPath id="round">
       <rect x="0" y="0" width="1000" height="280" rx="16" />
     </clipPath>
+    <linearGradient id="band" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B1020" />
+      <stop offset="0.52" stop-color="#5E3A20" />
+      <stop offset="1" stop-color="#A56C44" />
+    </linearGradient>
     <pattern id="grid" width="34" height="34" patternUnits="userSpaceOnUse">
-      <path d="M34 0H0V34" fill="none" stroke="#C1AA8B" stroke-opacity="0.06" stroke-width="1" />
+      <path d="M34 0H0V34" fill="none" stroke="#F5EFE8" stroke-opacity="0.07" stroke-width="1" />
     </pattern>
     <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
-      <stop offset="0" stop-color="#AB7249" stop-opacity="0.30" />
-      <stop offset="1" stop-color="#AB7249" stop-opacity="0" />
+      <stop offset="0" stop-color="#F0C79A" stop-opacity="0.26" />
+      <stop offset="1" stop-color="#F0C79A" stop-opacity="0" />
     </radialGradient>
-    <linearGradient id="rule" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#AB7249" stop-opacity="0.9" />
-      <stop offset="1" stop-color="#AB7249" stop-opacity="0" />
-    </linearGradient>
   </defs>
 
   <g clip-path="url(#round)">
-    <rect width="1000" height="280" fill="#05080F" />
+    <rect width="1000" height="280" fill="url(#band)" />
     <rect width="1000" height="280" fill="url(#grid)" />
-    <ellipse cx="830" cy="36" rx="380" ry="230" fill="url(#glow)" />
+    <ellipse cx="840" cy="30" rx="360" ry="220" fill="url(#glow)" />
 
-    <text x="56" y="74" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Consolas, monospace" font-size="13" letter-spacing="1.6" fill="#AB7249">okpara.netlify.app</text>
+    <text x="56" y="74" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Consolas, monospace" font-size="13" letter-spacing="1.6" fill="#EFD6BC">okpara.netlify.app</text>
 
-    <text x="56" y="146" font-family="Amaranth, 'Trebuchet MS', 'Segoe UI', Verdana, sans-serif" font-size="60" font-weight="700" fill="#F0F4F9">Favour Okpara</text>
+    <text x="56" y="146" font-family="Amaranth, 'Trebuchet MS', 'Segoe UI', Verdana, sans-serif" font-size="60" font-weight="700" fill="#FFF8F0">Favour Okpara</text>
 
-    <rect x="56" y="166" width="72" height="3" rx="1.5" fill="#AB7249" />
+    <rect x="56" y="166" width="72" height="3" rx="1.5" fill="#EFD6BC" />
 
-    <text x="56" y="202" font-family="Lora, Georgia, 'Times New Roman', serif" font-size="21" fill="#C1AA8B">Fullstack developer &amp; technical writer</text>
+    <text x="56" y="202" font-family="Lora, Georgia, 'Times New Roman', serif" font-size="21" fill="#F0DFCB">Fullstack developer &amp; technical writer</text>
 
     <g>
-      <rect x="56" y="222" width="336" height="34" rx="17" fill="#AB7249" fill-opacity="0.10" stroke="#AB7249" stroke-opacity="0.45" />
-      <circle cx="78" cy="239" r="4" fill="#C08A5E" />
-      <text x="94" y="244" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Consolas, monospace" font-size="12.5" fill="#C1AA8B">At Netsprin — open to the right move.</text>
+      <rect x="56" y="222" width="330" height="34" rx="17" fill="#0B1020" fill-opacity="0.30" stroke="#F0DCC6" stroke-opacity="0.45" />
+      <circle cx="78" cy="239" r="4" fill="#F5D9B8" />
+      <text x="94" y="244" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Consolas, monospace" font-size="12.5" fill="#F7E9D8">Enugu, Nigeria — open to what's next</text>
     </g>
-
-    <rect x="0" y="277" width="1000" height="3" fill="url(#rule)" />
   </g>
 </svg>

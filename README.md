@@ -3,19 +3,33 @@
   Lives in the repo github.com/Okpara202/Okpara202 — the name must match the
   username exactly, or GitHub will not surface it on the profile.
 
-  Palette lifted from okpara.netlify.app's dark theme, exact values:
-    bg #05080F   card #0B111F   border #17202F   text #F0F4F9
-    muted #8494AB   brown #AB7249   brown-light #C08A5E   tan #C1AA8B
+  Brown #AB7249 is the through-line, from okpara.netlify.app. Both of the site's
+  themes are honoured rather than just the dark one:
+    light  text #1A2233  muted #5A6577  brown #8B5B33
+    dark   text #F0F4F9  muted #98A3B4  brown #C99B6E
 
   The hero, the section headers and the project cards are hand-built SVG in
   assets/ rather than badge-service images. GitHub strips CSS from READMEs, so
-  an SVG we own is the only place the site's card/border/glow system can live.
+  an SVG we own is the only place a real card system can live.
+
+  Two rules those files follow, both learned the hard way:
+    1. No page-coloured fills. A card filled with the site's near-black reads as
+       a hole punched through GitHub's light theme. The cards are transparent
+       with a brown border, so the page shows through either way.
+    2. Nothing is a fixed page colour. Text defaults to the light theme and
+       swaps under prefers-color-scheme, with the light values repeated as
+       presentation attributes for anything that ignores the stylesheet.
+       That query reads the OS theme, not GitHub's own setting, so a reader
+       with GitHub dark on a light OS still gets the light text — but because
+       of rule 1 that only costs some contrast, it cannot go invisible.
+       The hero is exempt: it carries its own brown ground and its own light
+       text, so it needs no query at all.
   Editing one means editing its SVG — that is the cost of it not looking generic.
 -->
 
 <div align="center">
 
-<img src="assets/hero.svg" width="100%" alt="Favour Okpara — fullstack developer and technical writer. At Netsprin, open to the right move." />
+<img src="assets/hero.svg" width="100%" alt="Favour Okpara — fullstack developer and technical writer. Enugu, Nigeria, open to what's next." />
 
 <!--
   One link, not two: the CV lives on the portfolio and is only ever updated there.
@@ -100,11 +114,11 @@ I studied the human body for four years, then pointed the same question at softw
 -->
 <div align="center">
 
-<a href="https://tuteraafrica.xyz/"><img src="assets/card-tutera.svg" width="420" alt="Tutera — an LMS so educators across Africa can teach, own their material and get paid. Next.js, Zustand, Express." /></a>
-<a href="https://www.bbtutors.org/"><img src="assets/card-bbtutors.svg" width="420" alt="BB Tutors — a tutor's storefront: browse a lesson, buy it, watch it. Next.js, Express, Beepay." /></a>
-<a href="https://vibecraft.today"><img src="assets/card-vibecraft.svg" width="420" alt="VibeCraft — a website builder you talk to. Frontend only. Next.js, TypeScript." /></a>
-<a href="https://adaptly.onrender.com/"><img src="assets/card-adaptly.svg" width="420" alt="Adaptly — read a document in a language you don't speak, using Chrome's built-in AI. React." /></a>
-<a href="https://griggsspecialisthospital.com.ng/"><img src="assets/card-griggs.svg" width="420" alt="Griggs Specialist Hospital — a hospital site for people who are worried and in a hurry. React, Express." /></a>
+<a href="https://tuteraafrica.xyz/"><img src="assets/card-tutera.svg" width="47%" alt="Tutera — an LMS so educators across Africa can teach, own their material and get paid. Next.js, Zustand, Express." /></a>
+<a href="https://www.bbtutors.org/"><img src="assets/card-bbtutors.svg" width="47%" alt="BB Tutors — a tutor's storefront: browse a lesson, buy it, watch it. Next.js, Express, Beepay." /></a>
+<a href="https://vibecraft.today"><img src="assets/card-vibecraft.svg" width="47%" alt="VibeCraft — a website builder you talk to. Frontend only. Next.js, TypeScript." /></a>
+<a href="https://adaptly.onrender.com/"><img src="assets/card-adaptly.svg" width="47%" alt="Adaptly — read a document in a language you don't speak, using Chrome's built-in AI. React." /></a>
+<a href="https://griggsspecialisthospital.com.ng/"><img src="assets/card-griggs.svg" width="47%" alt="Griggs Specialist Hospital — a hospital site for people who are worried and in a hurry. React, Express." /></a>
 
 </div>
 
